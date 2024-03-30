@@ -12,8 +12,8 @@ Die Kugelbahn-Simulation ist ein JavaFX-Projekt, das eine realistische Simulatio
 •	Flexible Simulation: Die Simulation kann jederzeit gestartet und gestoppt werden, um Änderungen vorzunehmen oder das Verhalten der Kugeln zu analysieren.  
 •	Visuelle Hilfsmittel: Tangential- und Linienvektoren können angezeigt werden, um ein besseres Verständnis der Bewegung der Kugeln zu ermöglichen.  
 
-## Anforderungen
-•	JDK: Erfordert JDK 17.0.1 oder höher für die Ausführung.  
+## Infos
+•	JDK:  JDK 17.0.1 oder höher für die Ausführung.  
 •	JavaFX: Die Verwendung des JavaFX SDK 18 oder einer höheren Version ist erforderlich.  
 •	Mathe-Bibliothek: JOML 1.10.4 wird für mathematische Berechnungen und Vektormanipulationen verwendet.  
 
