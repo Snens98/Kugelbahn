@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<GridPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindow">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="ap" prefHeight="650.0" prefWidth="1100.0">
+         <children>
+            <Button fx:id="b" layoutX="26.0" layoutY="575.0" mnemonicParsing="false" onAction="#gui" prefHeight="25.0" prefWidth="90.0" text="Start / Stop" />
+            <TextField fx:id="radius" alignment="CENTER" layoutX="638.0" layoutY="575.0" maxHeight="26.0" maxWidth="120.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="12" />
+            <TextField fx:id="gewicht" alignment="CENTER" layoutX="638.0" layoutY="609.0" minWidth="80.0" prefWidth="80.0" text="100" />
+            <TextField fx:id="geschX" alignment="CENTER" layoutX="440.0" layoutY="575.0" maxHeight="26.0" maxWidth="80.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="0" />
+            <TextField fx:id="geschY" alignment="CENTER" layoutX="440.0" layoutY="609.0" maxHeight="26.0" maxWidth="80.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="0" />
+            <Label layoutX="563.0" layoutY="579.0" text="Radius (mm)" />
+            <Label layoutX="570.0" layoutY="613.0" text="Gewicht (g)" />
+            <Label layoutX="338.0" layoutY="579.0" text="X - Geschw. (m/s)" />
+            <Label layoutX="338.0" layoutY="613.0" text="Y - Geschw. (m/s)" />
+            <Label fx:id="time" layoutX="27.0" layoutY="615.0" prefHeight="18.0" prefWidth="77.0" text="Sek.: 0.00" />
+            <Slider fx:id="gravitation" blockIncrement="0.1" layoutX="831.0" layoutY="580.0" majorTickUnit="4.0" max="20.0" maxHeight="20.0" minHeight="20.0" minorTickCount="4" prefHeight="20.0" showTickLabels="true" snapToTicks="true" value="9.83" />
+            <Slider fx:id="windSlider" blockIncrement="0.1" layoutX="830.0" layoutY="614.0" majorTickUnit="2.0" max="8.0" min="-8.0" minorTickCount="4" prefHeight="20.0" prefWidth="147.0" showTickLabels="true" snapToTicks="true" />
+            <Label layoutX="765.0" layoutY="579.0" text="Gravitation" />
+            <Label layoutX="791.0" layoutY="614.0" text="Wind" />
+            <Button fx:id="bearbeiten" layoutX="150.0" layoutY="575.0" mnemonicParsing="false" onAction="#bearbeiten" prefHeight="25.0" prefWidth="90.0" text="Bearbeiten" />
+            <CheckBox fx:id="WallVec" layoutX="985.0" layoutY="33.0" mnemonicParsing="false" text="Linienvektoren" />
+            <CheckBox fx:id="richtungsVek" layoutX="985.0" layoutY="70.0" mnemonicParsing="false" text="Richtungsvektor" />
+            <Button fx:id="back" layoutX="150.0" layoutY="609.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="90.0" text="Zurücksetzen" />
+            <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" fill="#d7d7d7" height="540.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="950.0" />
+            <Slider fx:id="hebelSlider" blockIncrement="0.25" layoutX="984.0" layoutY="261.0" majorTickUnit="0.5" max="5.0" minorTickCount="1" prefHeight="58.0" prefWidth="110.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.4" />
+            <Label layoutX="990.0" layoutY="316.0" prefHeight="18.0" prefWidth="90.0" text="Min. Kraft (dN)" />
+            <Label fx:id="dN" layoutX="990.0" layoutY="242.0" prefHeight="18.0" prefWidth="90.0" text="Hebel:" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

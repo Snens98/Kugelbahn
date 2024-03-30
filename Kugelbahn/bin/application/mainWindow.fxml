@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindow">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="b" layoutX="26.0" layoutY="575.0" mnemonicParsing="false" onAction="#gui" text="Start / Stop" />
+            <TextField fx:id="radius" alignment="CENTER" layoutX="554.0" layoutY="575.0" maxHeight="26.0" maxWidth="120.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="10" />
+            <TextField fx:id="gewicht" alignment="CENTER" layoutX="554.0" layoutY="609.0" minWidth="80.0" prefWidth="80.0" text="100" />
+            <TextField fx:id="geschX" alignment="CENTER" layoutX="328.0" layoutY="575.0" maxHeight="26.0" maxWidth="80.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="0" />
+            <TextField fx:id="geschY" alignment="CENTER" layoutX="328.0" layoutY="609.0" maxHeight="26.0" maxWidth="80.0" minHeight="26.0" minWidth="80.0" prefHeight="26.0" prefWidth="80.0" text="0" />
+            <Label layoutX="512.0" layoutY="579.0" text="Radius" />
+            <Label layoutX="486.0" layoutY="613.0" text="Gewicht (g)" />
+            <Label layoutX="184.0" layoutY="579.0" text="X - Geschwindigkeit (m/s)" />
+            <Label layoutX="184.0" layoutY="613.0" text="Y - Geschwindigkeit (m/s)" />
+            <Label fx:id="time" layoutX="28.0" layoutY="613.0" prefHeight="18.0" prefWidth="77.0" text="Sek.: 0.00" />
+            <Pane fx:id="ap" layoutX="24.0" layoutY="20.0" maxHeight="540.0" maxWidth="950.0" minHeight="540.0" minWidth="950.0" prefHeight="540.0" prefWidth="950.0" style="-fx-background-color: lightgrey;" />
+            <Slider fx:id="gravitation" blockIncrement="0.1" layoutX="831.0" layoutY="580.0" majorTickUnit="4.0" max="20.0" minorTickCount="1" showTickLabels="true" snapToTicks="true" value="9.83" />
+            <Slider fx:id="aufprallSlider" blockIncrement="20.0" layoutX="830.0" layoutY="614.0" majorTickUnit="20.0" minorTickCount="5" prefHeight="19.0" prefWidth="147.0" showTickLabels="true" snapToTicks="true" value="50.0" />
+            <Label layoutX="765.0" layoutY="579.0" text="Gravitation" />
+            <Label layoutX="722.0" layoutY="613.0" text="Aufprallenergie (%)" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
