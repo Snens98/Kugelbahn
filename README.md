@@ -17,6 +17,20 @@ Die Kugelbahn-Simulation ist ein JavaFX-Projekt, das eine realistische Simulatio
 •	JavaFX: Die Verwendung des JavaFX SDK 18 oder einer höheren Version ist erforderlich.  
 •	Mathe-Bibliothek: JOML 1.10.4 wird für mathematische Berechnungen und Vektormanipulationen verwendet.  
 
+
+## Ausführen  
+Java SE Development Kit 17:  
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html  
+
+Java:  
+https://www.java.com/de/download/manual.jsp  
+  
+
+Kugelbahn.jar downloaden von:
+https://github.com/Snens98/Kugelbahn/releases/tag/Kugelbahn-jar-file.  
+
+  
+
 ## Bilder
 
 <img width="828" alt="image" src="https://github.com/Snens98/Kugelbahn/assets/116456908/890d4bca-d200-4c6f-abba-1d35d152b516">  
